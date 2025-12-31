@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Juan Camilo</title>
+  <meta name="description" content="Perfil personal de Juan Camilo Gómez Álvarez. Desarrollador Fullstack.">
+  <meta name="keywords" content="perfil personal, desarrollador Fullstack, portfolio.">
+  <meta name="author" content="Juan Camilo Gómez">
+  <meta name="robots" content="index, follow">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Open Graph para Redes Sociales -->
+  <meta property="og:title" content="Juan Camilo Gómez - Mi Perfil Personal">
+  <meta property="og:description"
+    content="Descubre mi viaje aprendiendo desarrollo web, mis proyectos y mi pasión por la tecnología.">
+  <meta property="og:image" content="https://miperfilpersonal.com/assets/images/og-preview.jpg">
+  <meta property="og:url" content="https://miperfilpersonal.com">
+  <meta property="og:type" content="profile">
+  <meta property="og:site_name" content="Mi Perfil Personal">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="JCGA931 - Desarrollador Web">
+  <meta name="twitter:description" content="Mi perfil personal como desarrollador web en formación">
+  <meta name="twitter:image" content="https://miperfilpersonal.com/assets/images/twitter-card.jpg">
+  <meta name="twitter:creator" content="@diegodegranda_dev">
+
+  <!-- URLs Canónicas -->
+  <link rel="canonical" href="https://miperfilpersonal.com/">
+  <link rel="alternate" hreflang="es" href="https://miperfilpersonal.com/es/">
+  <link rel="alternate" hreflang="en" href="https://miperfilpersonal.com/en/">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body>
+  <!-- 
+    ========================================
+    HEADER PRINCIPAL
+    ========================================
+    -->
+
+  <header role="banner">
+    <!-- Logo y Marca Personal -->
+    <div class="brand">
+      <a href="" aria-label="Mi Perfil Personal - Inicio">
+        <span>JC</span>
+      </a>
+    </div>
+
+    <nav class="nav-container" aria-label="Navegación principal">
+      <div class="icon" id="toggle" onclick="myFunction()">&#9776</div>
+      <div id="ul">
+        <ul class="nav-ul">
+          <li><a href="/" aria-current="page">Inicio</a></li>
+          <li><a href="/sobre-mi.html">Proyectos</a></li>
+          <li><a href="/habilidades.html">Habilidades</a></li>
+          <li><a href="/proyectos.html">Sobre mi</a></li>
+          <li><a href="/contacto.html">Contacto</a></li>
+          <li>
+            <div class="header-actions">
+              <a class="cv" href="/assets/documents/cv-Juan-Camilo.pdf" download aria-label="Descargar CV en PDF">
+                CV
+              </a>
+              <select aria-label="Seleccionar idioma">
+                <option value="es" selected>ES</option>
+                <option value="en">EN</option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+
+  </header>
+
+  <!-- 
+    ========================================
+    CONTENIDO PRINCIPAL
+    ========================================
+    -->
+
+  <main id="contenido-principal" role="main">
+
+    <!-- Hero Section -->
+    <section class="hero" aria-labelledby="hero-titulo">
+      <div class="hero__presentacion">
+        <div class="hero__presentacion--introduccion">
+          <h1 id="hero-titulo">¡Hola! Soy <br>Juan Camilo</h1>
+          <h2>Desarrollador de software</h2>
+          <p>
+            Bienvenido a mi portafolio, me apaciona crear aplicaciones y sitios web hermosos
+            y funcionales. Juntos vamos a transformar ideas en experiencias
+            increíbles.
+          </p>
+        </div>
+        <div class="hero__presentacion--stats">
+          <div>
+            <data value="6">3+</data>
+            <span>Años de experiencia</span>
+          </div>
+          <div>
+            <data value="3">2+</data>
+            <span>Proyectos completados</span>
+          </div>
+          <div>
+            <data value="5">6+</data>
+            <span>Tecnologías</span>
+          </div>
+        </div>
+      </div>
+      <figure class="hero__figure">
+        <picture>
+          <source media="(min-width: 768px)" srcset="/img/foto-dev.png" type="image/webp">
+          <source media="(min-width: 768px)" srcset="/img/foto-dev.png">
+          <img src="/img/foto-dev.png" alt="Foto perfil Juan Camilo" width="500" height="500" loading="eager">
+        </picture>
+        <p>Ilustración de pngtree</p>
+      </figure>
+
+    </section>
+
+    <!-- Proyectos Destacados -->
+    <section id="proyectos-destacados" aria-labelledby="projects-titulo">
+      <h2 id="projects-titulo">Mis Proyectos de Práctica</h2>
+      <p>
+        Cada proyecto representa mi progreso aprendiendo desarrollo web.
+        Desde páginas simples hasta este portfolio completo.
+      </p>
+
+      <!-- Call to Actions -->
+      <div class="hero-actions">
+        <a href="#proyectos-destacados">Ver Mis Proyectos</a>
+      </div>
+
+      <!-- Proyecto 1 -->
+      <article>
+        <figure>
+          <picture>
+            <source type="image/webp" srcset="/img/formulario-ejemplo.png">
+            <img src="/img/formulario-ejemplo.png" alt="Captura de mi primer sitio web con HTML y CSS" width="100"
+              height="100" loading="lazy">
+          </picture>
+          <figcaption>Mi Primer Sitio Web - HTML y CSS básico</figcaption>
+        </figure>
+
+        <h3>Mi Primer Sitio Web</h3>
+        <p>
+          Mi primer proyecto completo usando HTML y CSS. Una página
+          simple pero bien estructurada donde apliqué los conceptos
+          básicos aprendidos.
+        </p>
+
+
+    </section>
+
+    <!-- Habilidades Técnicas -->
+    <section aria-labelledby="skills-titulo">
+      <h2 id="skills-titulo">Mis Habilidades</h2>
+
+      <h3>Tecnologías que estoy aprendiendo</h3>
+      <ul>
+        <li>
+          <img src="/assets/icons/html5.svg" alt="" width="40" height="40" aria-hidden="true">
+          <span>HTML5 & Semántica</span>
+          <progress value="75" max="100" aria-label="75% de dominio">
+            75%
+          </progress>
+        </li>
+        <li>
+          <img src="/assets/icons/css3.svg" alt="" width="40" height="40" aria-hidden="true">
+          <span>CSS3 & Diseño</span>
+          <progress value="60" max="100" aria-label="60% de dominio">
+            60%
+          </progress>
+        </li>
+        <li>
+          <img src="/assets/icons/javascript.svg" alt="" width="40" height="40" aria-hidden="true">
+          <span>JavaScript (Comenzando)</span>
+          <progress value="20" max="100" aria-label="20% de dominio">
+            20%
+          </progress>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Sección Sobre Mí -->
+    <section aria-labelledby="about-titulo">
+      <h2 id="about-titulo">Mi Viaje en el Desarrollo Web</h2>
+
+      <p>
+        Soy <strong>desarrollador web en formación</strong>,
+        actualmente aprendiendo HTML y CSS para crear sitios
+        web hermosos y funcionales.
+      </p>
+
+      <p>
+        Me apasiona la tecnología y el diseño. Cada día descubro
+        nuevas formas de mejorar mis habilidades y crear
+        <em>mejores experiencias web</em>.
+      </p>
+
+      <blockquote>
+        <p>
+          "El buen diseño es obvio. El gran diseño es transparente.
+          Mi objetivo es crear sitios web que sean ambos: bellos
+          y funcionales."
+        </p>
+        <cite>— Mi filosofía de aprendizaje</cite>
+      </blockquote>
+
+      <!-- Valores Personales -->
+      <h3>Mis Valores</h3>
+      <dl>
+        <dt>🎯 Dedicación</dt>
+        <dd>Comprometido con mi aprendizaje diario</dd>
+
+        <dt>📚 Curiosidad</dt>
+        <dd>Siempre explorando nuevas tecnologías</dd>
+
+        <dt>🤝 Comunidad</dt>
+        <dd>Aprendiendo y compartiendo con otros</dd>
+
+        <dt>💡 Creatividad</dt>
+        <dd>Buscando soluciones innovadoras</dd>
+      </dl>
+
+      <a href="/sobre-mi.html">
+        Conoce más sobre mí →
+      </a>
+    </section>
+
+    <!-- Call to Action -->
+    <section aria-labelledby="cta-titulo">
+      <h2 id="cta-titulo">¿Te gustaría conectar?</h2>
+      <p>
+        Siempre estoy buscando aprender de otros desarrolladores,
+        compartir experiencias y colaborar en proyectos
+        interesantes.
+      </p>
+
+      <div>
+        <h3>🚀 Proyectos de Práctica</h3>
+        <p>¿Tienes una idea? Colaboremos y aprendamos juntos</p>
+        <a href="/contacto.html#colaborar">Colaborar</a>
+      </div>
+
+      <div>
+        <h3>💬 Conectemos</h3>
+        <p>¿Eres principiante también? Aprendamos juntos</p>
+        <a href="/contacto.html#conectar">Conectar</a>
+      </div>
+
+      <div>
+        <h3>📚 Recursos</h3>
+        <p>Compartamos recursos y tips de aprendizaje</p>
+        <a href="/contacto.html#recursos">Compartir</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 
+    ========================================
+    FOOTER COMPLETO
+    ========================================
+    -->
+
+  <footer role="contentinfo">
+    <!-- Sobre Mi Perfil Personal -->
+    <section aria-labelledby="footer-about">
+      <h2 id="footer-about">Mi Perfil Personal</h2>
+      <p>
+        Portfolio personal de Juan Camilo Gómez.
+        Desarrollador web.
+      </p>
+
+      <!-- Newsletter -->
+      <form action="/newsletter" method="POST">
+        <label for="newsletter-email">
+          Suscríbete a mi newsletter
+        </label>
+        <input type="email" id="newsletter-email" name="email" placeholder="tu@email.com" required aria-required="true">
+        <button type="submit">Suscribir</button>
+      </form>
+    </section>
+
+    <!-- Enlaces del Footer -->
+    <nav aria-label="Enlaces del footer">
+      <ul>
+        <li><a href="/">Inicio</a></li>
+        <li><a href="/sobre-mi.html">Sobre mí</a></li>
+        <li><a href="/proyectos.html">Proyectos</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+        <li><a href="/contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <!-- Contacto -->
+    <section aria-labelledby="footer-contact">
+      <h2 id="footer-contact">Contacto</h2>
+      <address>
+        <dl>
+          <dt>Email:</dt>
+          <dd>
+            <a href="mailto:kamygz93@gmail.com">
+              kamygz93@gmail.com
+            </a>
+          </dd>
+
+          <dt>LinkedIn:</dt>
+          <dd>
+            <a href="https://www.linkedin.com/in/juan-camilo-gomez-alvarez-747147201" target="_blank" rel="noopener">
+              linkedin.com/in/juan-camilo-gomez-alvarez-747147201
+            </a>
+          </dd>
+
+          <dt>GitHub:</dt>
+          <dd>
+            <a href="https://github.com/JuanCamiloGomezAlvarez" target="_blank" rel="noopener">
+              github.com/JuanCamiloGomezAlvarez
+            </a>
+          </dd>
+
+          <dt>Ubicación:</dt>
+          <dd>Medellin, Colombia</dd>
+        </dl>
+      </address>
+    </section>
+
+    <!-- Redes Sociales -->
+    <section aria-labelledby="footer-social">
+      <h2 id="footer-social">Sígueme</h2>
+      <ul>
+        <li>
+          <a href="https://github.com/JuanCamiloGomezAlvarez" target="_blank" rel="noopener"
+            aria-label="GitHub de Camilo">
+            GitHub
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/diegodegranda_dev" target="_blank" rel="noopener"
+            aria-label="Twitter de Diego De Granda">
+            Twitter
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/juan-camilo-gomez-alvarez-747147201" target="_blank" rel="noopener"
+            aria-label="LinkedIn de Camilo">
+            LinkedIn
+          </a>
+        </li>
+      </ul>
+
+      <!-- Descargas -->
+      <a href="/assets/documents/cv-diego-degranda.pdf" download>
+        📄 Descargar mi CV (PDF)
+      </a>
+    </section>
+
+    <!-- Footer Bottom -->
+    <div>
+      <p>&copy; 2025 Diego De Granda - Mi Perfil Personal. Todos los derechos reservados.</p>
+
+      <nav aria-label="Enlaces legales">
+        <a href="/privacidad.html">Privacidad</a>
+        <a href="/terminos.html">Términos</a>
+        <a href="/accesibilidad.html">Accesibilidad</a>
+      </nav>
+
+      <p>
+        Diseñado y desarrollado con ❤️ por Diego De Granda
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    function myFunction() {
+      console.log("click")
+      const contenedor = document.getElementById("ul")
+      contenedor.classList.toggle("ul")
+    }
+  </script>
+</body>
+
+</html>
