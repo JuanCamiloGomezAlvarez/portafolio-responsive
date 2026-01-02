@@ -241,8 +241,17 @@ h2 {
 
 .projects-section h2 {
   color: rgb(104, 211, 114);
-  padding: 40px 0;
+  padding: 25px 0;
   margin: 0;
+}
+
+.article-container{
+  display: flex;
+  padding: 40px;
+  gap: 30px;
+  justify-content: space-around;
+  max-width: 400px;
+  overflow-x: auto;
 }
 
 article {
@@ -250,10 +259,10 @@ article {
   justify-content: center;
   flex-direction: column;
   width: 90%;
+  min-width: 350px;
   max-width: 350px;
   height: 500px;
   background-color: white;
-  justify-self: center;
   border-radius: 8px;
   box-shadow: 3px 3px 10px rgb(104, 211, 114);
 }
