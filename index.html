@@ -41,14 +41,8 @@
 </head>
 
 <body>
-  <!-- 
-    ========================================
-    HEADER PRINCIPAL
-    ========================================
-    -->
-
+  
   <header role="banner">
-    <!-- Logo y Marca Personal -->
     <div class="brand">
       <a href="" aria-label="Mi Perfil Personal - Inicio">
         <span>JC</span>
@@ -57,7 +51,7 @@
 
     <nav class="nav-container" aria-label="Navegación principal">
       <div class="icon" id="toggle" onclick="myFunction()">&#9776</div>
-      <div id="ul">
+      <div  class="div-ul" id="ul">
         <ul class="nav-ul">
           <li><a href="/" aria-current="page">Inicio</a></li>
           <li><a href="/sobre-mi.html">Proyectos</a></li>
@@ -77,9 +71,7 @@
           </li>
         </ul>
       </div>
-
     </nav>
-
   </header>
 
   <main id="contenido-principal" role="main">
@@ -279,12 +271,6 @@
 
   </main>
 
-  <!-- 
-    ========================================
-    FOOTER COMPLETO
-    ========================================
-    -->
-
   <footer role="contentinfo">
     <!-- Sobre Mi Perfil Personal -->
     <section aria-labelledby="footer-about">
@@ -397,7 +383,16 @@
     function myFunction() {
       console.log("click")
       const contenedor = document.getElementById("ul")
-      contenedor.classList.toggle("ul")
+
+      contenedor.classList.toggle("div-ul")
+      /*if(contenedor.classList("div-ul")){
+        contenedor.classList.remove("div-ul")
+        contenedor.classList.add("ul")
+      }else{
+        contenedor.classList.remove("ul")
+        contenedor.classList.add("div-ul")
+      }*/
+      
     }
   </script>
 </body>

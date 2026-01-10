@@ -67,6 +67,8 @@ section {
   color: rgb(104, 211, 114);
 }
 
+
+
 .nav-ul {
   position: fixed;
   width: 50%;
@@ -105,12 +107,12 @@ section {
   color: rgb(104, 211, 114);
 }
 
-.ul {
+.div-ul{
   display: none;
 }
 
+
 .header-actions {
-  display: flex;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -248,6 +250,7 @@ h2 {
 .article-container{
   display: flex;
   padding: 40px;
+  justify-self: center;
   gap: 30px;
   justify-content: space-around;
   max-width: 400px;
