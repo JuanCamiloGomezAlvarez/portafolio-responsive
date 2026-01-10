@@ -235,7 +235,7 @@ h2 {
 }
 
 .projects-section {
-  background-color: white;
+  background-color: #212529;
 }
 
 .projects-section figure {
@@ -250,9 +250,12 @@ h2 {
 
 .article-container {
   display: grid;
-  grid-template-columns:1fr;
-  justify-self: center;
-  gap: 30px;
+  justify-items: center;
+  max-width: 1440px;
+  min-width: 320px;
+  margin: 0 auto;
+  grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
   padding-bottom: 20px;
 }
 
@@ -261,11 +264,15 @@ article {
   justify-content: center;
   flex-direction: column;
   min-width: 320px;
-  max-width: 350px;
+  max-width: 345px;
   height: 500px;
   background-color: white;
   border-radius: 8px;
   box-shadow: 3px 3px 10px rgb(104, 211, 114);
+}
+
+article:hover{
+  box-shadow: 3px 3px 20px rgb(67, 221, 83);
 }
 
 .img-figure {
@@ -396,25 +403,11 @@ footer {
   .hero__figure:hover p {
     opacity: 1;
   }
-
-  .article-container {
-    max-width: none;
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
-    
-  }
-
-  .article{
-    min-width: 350px;
-  }
-
-
-
 }
 
 @media (min-width: 1440px){
   .article-container {
-    grid-template-columns: 1fr 1fr 1fr ;
+    
     height: 100vh;
   }
 }
