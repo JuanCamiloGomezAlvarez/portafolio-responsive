@@ -243,6 +243,15 @@ h2 {
   margin: 0;
 }
 
+.skills h3{
+  color: white;
+  padding: 25px 0;
+  margin: 0;
+  font-size: 1.3em;
+  font-weight: bold;
+  text-align: center;
+}
+
 .icon-container {
   display: grid;
   justify-items: center;
@@ -262,7 +271,13 @@ h2 {
   height: 100px;
   background-color: #212529;
   box-shadow: rgba(0, 0, 0, 0.8) 0px 1px 4px 0px;
+  border-radius: 8px;
 }
+
+.div-icon:hover{
+  box-shadow: 3px 3px 10px rgb(104, 211, 114);
+}
+
 
 .div-card-icon {
   width: 60px;
@@ -300,7 +315,7 @@ h2 {
 
 .div-icon span {
   color: rgb(110, 110, 110);
-  font-size: 0.9em;
+  font-size: 1em;
 
 }
 
