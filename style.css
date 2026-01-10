@@ -31,7 +31,7 @@ header {
 
 section {
   height: auto;
-  
+  background-color: #212529;
 }
 
 .brand span {
@@ -139,7 +139,6 @@ section {
   padding-bottom: 100px;
   display: flex;
   justify-content: space-around;
-  background-color: #212529;
   height: 100vh;
 }
 
@@ -161,7 +160,7 @@ h1 {
   color: rgb(104, 211, 114);
   font-size: calc(2.375rem + 2vw);
   font-weight: bold;
-  text-shadow: 4px 4px 2px #234325;
+  text-shadow: 4px 4px 12px rgb(104, 211, 114);
   text-align: center;
 }
 
@@ -175,7 +174,7 @@ h2 {
 .hero__presentacion p {
   margin-left: 1em;
   width: 80%;
-  color: rgb(116 119 125);
+  color: rgb(110, 110, 110);
   font-size: 1.3em;
   font-weight: bold;
   text-align: center;
@@ -234,9 +233,78 @@ h2 {
   opacity: 1;
 }
 
-.projects-section {
-  background-color: #212529;
+.skills {
+  padding: 20px;
 }
+
+.skills h2 {
+  color: rgb(104, 211, 114);
+  padding: 25px 0;
+  margin: 0;
+}
+
+.icon-container {
+  display: grid;
+  justify-items: center;
+  max-width: 1440px;
+  min-width: 280px;
+  margin: 0 auto;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.div-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background-color: #212529;
+  box-shadow: rgba(0, 0, 0, 0.8) 0px 1px 4px 0px;
+}
+
+.div-card-icon {
+  width: 60px;
+  height: 90%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 4px;
+  background-position: center center;
+
+}
+
+.javascript {
+  background-image: url(./img/js.png);
+}
+
+.css{
+  background-image: url(./img/css-3.png);
+}
+
+.html{
+  background-image: url(./img/html-5.png);
+}
+
+.node{
+  background-image: url(./img/node-js.png);
+}
+
+.react{
+  background-image: url(./img/react-js.png);
+}
+
+.postgresql{
+  background-image: url(./img/postgresql.png);
+}
+
+.div-icon span {
+  color: rgb(110, 110, 110);
+  font-size: 0.9em;
+
+}
+
+
 
 .projects-section figure {
   margin: 5px;
@@ -254,7 +322,7 @@ h2 {
   max-width: 1440px;
   min-width: 320px;
   margin: 0 auto;
-  grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 20px;
   padding-bottom: 20px;
 }
@@ -271,7 +339,7 @@ article {
   box-shadow: 3px 3px 10px rgb(104, 211, 114);
 }
 
-article:hover{
+article:hover {
   box-shadow: 3px 3px 20px rgb(67, 221, 83);
 }
 
@@ -405,9 +473,9 @@ footer {
   }
 }
 
-@media (min-width: 1440px){
+@media (min-width: 1440px) {
   .article-container {
-    
+
     height: 100vh;
   }
 }
