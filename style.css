@@ -30,7 +30,8 @@ header {
 }
 
 section {
-  height: 100vh;
+  height: auto;
+  
 }
 
 .brand span {
@@ -107,7 +108,7 @@ section {
   color: rgb(104, 211, 114);
 }
 
-.div-ul{
+.div-ul {
   display: none;
 }
 
@@ -139,7 +140,7 @@ section {
   display: flex;
   justify-content: space-around;
   background-color: #212529;
-
+  height: 100vh;
 }
 
 .hero__presentacion {
@@ -247,22 +248,19 @@ h2 {
   margin: 0;
 }
 
-.article-container{
-  display: flex;
-  padding: 40px;
+.article-container {
+  display: grid;
+  grid-template-columns:1fr;
   justify-self: center;
   gap: 30px;
-  justify-content: space-around;
-  max-width: 400px;
-  overflow-x: auto;
+  padding-bottom: 20px;
 }
 
 article {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 90%;
-  min-width: 350px;
+  min-width: 320px;
   max-width: 350px;
   height: 500px;
   background-color: white;
@@ -309,15 +307,15 @@ article p {
   overflow-y: auto;
 }
 
-.btn-article{
+.btn-article {
   margin-top: 5px;
   align-self: center;
   display: inline-block;
   padding: 10px 20px;
   background-color: rgb(104, 211, 114);
   color: white;
-  text-decoration: none;    
-  border-radius: 6px;         
+  text-decoration: none;
+  border-radius: 6px;
   font-weight: 600;
   border: none;
 }
@@ -397,5 +395,26 @@ footer {
 
   .hero__figure:hover p {
     opacity: 1;
+  }
+
+  .article-container {
+    max-width: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    
+  }
+
+  .article{
+    min-width: 350px;
+  }
+
+
+
+}
+
+@media (min-width: 1440px){
+  .article-container {
+    grid-template-columns: 1fr 1fr 1fr ;
+    height: 100vh;
   }
 }
