@@ -222,12 +222,11 @@ h2 {
 }
 
 .hero__figure p {
-  display: none;
+  display: flex;
   position: absolute;
   background: rgb(0, 0, 0);
   background: rgba(0, 0, 0, 0.5);
-  
-  width: 500px;
+  width:0 auto;
   transition: .5s ease;
   opacity: 0;
   color: white;
