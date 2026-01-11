@@ -50,13 +50,17 @@
     </div>
 
     <nav class="nav-container" aria-label="Navegación principal">
-      <div class="icon" id="toggle" onclick="myFunction()">&#9776</div>
+      <div class="icon" id="toggle" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
       <div class="div-ul" id="ul">
         <ul class="nav-ul">
-          <li><a href="/" aria-current="page">Inicio</a></li>
-          <li><a href="/sobre-mi.html">Habilidadess</a></li>
-          <li><a href="/habilidades.html">Proyecto</a></li>
-          <li><a href="/contacto.html">Contacto</a></li>
+          <li><a  href="#hero" aria-current="page">Inicio</a></li>
+          <li ><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
           <li>
             <div class="header-actions">
               <a class="cv" href="/assets/documents/cv-Juan-Camilo.pdf" download aria-label="Descargar CV en PDF">
@@ -74,7 +78,7 @@
   </header>
 
   <main id="contenido-principal" role="main">
-    <section class="hero" aria-labelledby="hero-titulo">
+    <section class="hero" id="hero" aria-labelledby="hero-titulo">
       <div class="hero__presentacion">
         <div class="hero__presentacion--introduccion">
           <h1 id="hero-titulo">¡Hola! Soy <br>Juan Camilo</h1>
@@ -111,7 +115,7 @@
 
     </section>
 
-    <section class="skills" aria-labelledby="skills-titulo">
+    <section class="skills" id="habilidades" aria-labelledby="skills-titulo">
       <h2 id="skills-titulo">Mis Habilidades</h2>
       <h3>Programación y diseño</h3>
       <div class="icon-container">
@@ -150,7 +154,7 @@
       <h3>Idiomas</h3>
     </section>
 
-    <section class="projects-section" id="proyectos-destacados" aria-labelledby="projects-titulo">
+    <section class="projects-section" id="proyectos" aria-labelledby="projects-titulo">
       <h2 id="projects-titulo">Mis Proyectos</h2>
       <div class="article-container">
         <article>
@@ -209,7 +213,7 @@
 
     </section>
 
-    <section aria-labelledby="cta-titulo">
+    <section id="contacto" aria-labelledby="cta-titulo">
       <h2 id="cta-titulo">¿Te gustaría conectar?</h2>
       <p>
         Siempre estoy buscando aprender de otros desarrolladores,
@@ -347,8 +351,9 @@
   </footer>
 
   <script>
-    function myFunction() {
+    function myFunction(x) {
       console.log("click")
+      x.classList.toggle("change");
       const contenedor = document.getElementById("ul")
       contenedor.classList.toggle("div-ul")
     }

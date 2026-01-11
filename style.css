@@ -56,24 +56,46 @@ section {
   display: inline-block;
   color: white;
   font-size: 2.7rem;
-  padding: 9px;
-  height: 80%;
-  margin-right: 20px;
+  padding: 0;
+  height: 100%;
+  margin-right: 35px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
   cursor: pointer;
+  margin-top: 25px;
 }
 
-.icon:hover {
-  color: rgb(104, 211, 114);
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: rgb(104, 211, 114);
+  margin: 6px 0;
+  transition: 0.4s;
 }
 
+.icon:hover .bar1 .bar2 .bar3 {
+  background-color: rgb(104, 211, 114);
+}
 
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
 
 .nav-ul {
   position: fixed;
   width: 50%;
   right: 0%;
+  margin-top: -30px;
   text-align: center;
   padding-left: 0;
   display: flex;
@@ -84,29 +106,25 @@ section {
   box-shadow: rgba(0, 0, 0, 0.8) 0px 1px 4px 0px;
 }
 
-.nav-container ul li {
-  padding: 24px 10px;
-  border-radius: 6px;
-  width: auto;
-  margin-bottom: 10px;
-}
-
-.nav-container ul li:hover {
-  cursor: pointer;
-  background-color: rgb(104, 211, 114);
-}
-
 .nav-container ul li a {
   color: white;
   font-size: 1.3em;
   font-weight: bold;
+  display: flex;
+  width: 100%;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  margin: 10px 0;
+} 
 
+.nav-container ul li a:hover {
+  cursor: pointer;
+  background-color: rgb(104, 211, 114);
 }
 
-.cv:hover {
-  background-color: white;
-  color: rgb(104, 211, 114);
-}
+
 
 .div-ul {
   display: none;
@@ -119,15 +137,6 @@ section {
   align-items: center;
 }
 
-.header-actions a {
-  padding: 5px 20px;
-  margin-right: 8px;
-  border-radius: 8px;
-  background-color: rgb(104, 211, 114);
-  color: white;
-  font-size: 1.3em;
-  font-weight: bold;
-}
 
 #contenido-principal {
   margin-top: 70px;
@@ -234,7 +243,7 @@ h2 {
 }
 
 .skills {
-  padding: 20px;
+  padding-top: 80px;
 }
 
 .skills h2 {
@@ -243,7 +252,7 @@ h2 {
   margin: 0;
 }
 
-.skills h3{
+.skills h3 {
   color: white;
   padding: 25px 0;
   margin: 0;
@@ -274,7 +283,7 @@ h2 {
   border-radius: 8px;
 }
 
-.div-icon:hover{
+.div-icon:hover {
   box-shadow: 3px 3px 10px rgb(104, 211, 114);
 }
 
@@ -293,23 +302,23 @@ h2 {
   background-image: url(./img/js.png);
 }
 
-.css{
+.css {
   background-image: url(./img/css-3.png);
 }
 
-.html{
+.html {
   background-image: url(./img/html-5.png);
 }
 
-.node{
+.node {
   background-image: url(./img/node-js.png);
 }
 
-.react{
+.react {
   background-image: url(./img/react-js.png);
 }
 
-.postgresql{
+.postgresql {
   background-image: url(./img/postgresql.png);
 }
 
@@ -319,10 +328,13 @@ h2 {
 
 }
 
-
+.projects-section{
+  padding-top: 80px;
+}
 
 .projects-section figure {
   margin: 5px;
+  
 }
 
 .projects-section h2 {
@@ -441,8 +453,9 @@ footer {
     box-shadow: none
   }
 
-  .nav-container ul li {
-    padding: 10px 10px;
+  .nav-container ul li a{
+    height: 40px;
+    padding: 5px 10px;
   }
 
   .nav-ul:last-child {
