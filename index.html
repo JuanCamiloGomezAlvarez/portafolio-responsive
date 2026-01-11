@@ -57,10 +57,10 @@
       </div>
       <div class="div-ul" id="ul">
         <ul class="nav-ul">
-          <li><a  href="#hero" aria-current="page">Inicio</a></li>
-          <li ><a href="#habilidades">Habilidades</a></li>
-          <li><a href="#proyectos">Proyectos</a></li>
-          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="#hero" onclick="myFunction(this)" aria-current="page">Inicio</a></li>
+          <li><a href="#habilidades" onclick="myFunction(this)">Habilidades</a></li>
+          <li><a href="#proyectos" onclick="myFunction(this)">Proyectos</a></li>
+          <li><a href="#contacto" onclick="myFunction(this)">Contacto</a></li>
           <li>
             <div class="header-actions">
               <a class="cv" href="/assets/documents/cv-Juan-Camilo.pdf" download aria-label="Descargar CV en PDF">
@@ -78,6 +78,7 @@
   </header>
 
   <main id="contenido-principal" role="main">
+
     <section class="hero" id="hero" aria-labelledby="hero-titulo">
       <div class="hero__presentacion">
         <div class="hero__presentacion--introduccion">
@@ -150,11 +151,40 @@
           <span>PostgreSQL</span>
         </div>
       </div>
-      <h3>Habilidades blandas</h3>
+      <h3>Herramientas de desarrollo y otras habilidades</h3>
+      <div class="icon-container">
+        <div class="div-icon">
+          <div class="div-card-icon git">
+          </div>
+          <span>Git</span>
+        </div>
+        <div class="div-icon">
+          <div class="div-card-icon github">
+          </div>
+          <span>GitHub</span>
+        </div>
+      </div>
       <h3>Idiomas</h3>
+      <div class="icon-container">
+        <div class="div-icon">
+          <div class="div-card-icon ingles">
+          </div>
+          <span>English</span>
+        </div>
+        <div class="div-icon">
+          <div class="div-card-icon español">
+          </div>
+          <span>Spanish</span>
+        </div>
+        <div class="div-icon">
+          <div class="div-card-icon hebreo">
+          </div>
+          <span>Hebrew</span>
+        </div>
+      </div>
     </section>
 
-    <section class="projects-section" id="proyectos" aria-labelledby="projects-titulo">
+    <section class="projects" id="proyectos" aria-labelledby="projects-titulo">
       <h2 id="projects-titulo">Mis Proyectos</h2>
       <div class="article-container">
         <article>
@@ -213,30 +243,21 @@
 
     </section>
 
-    <section id="contacto" aria-labelledby="cta-titulo">
+    <section class="contact" id="contacto" aria-labelledby="cta-titulo">
       <h2 id="cta-titulo">¿Te gustaría conectar?</h2>
-      <p>
-        Siempre estoy buscando aprender de otros desarrolladores,
-        compartir experiencias y colaborar en proyectos
-        interesantes.
-      </p>
+      <div class="contact-container">
+        <form action="/action_page.php">
+          <label for="mail">Email</label>
+          <input type="email" id="mail" name="email" placeholder="Your email..">
 
-      <div>
-        <h3>🚀 Proyectos de Práctica</h3>
-        <p>¿Tienes una idea? Colaboremos y aprendamos juntos</p>
-        <a href="/contacto.html#colaborar">Colaborar</a>
-      </div>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name..">
 
-      <div>
-        <h3>💬 Conectemos</h3>
-        <p>¿Eres principiante también? Aprendamos juntos</p>
-        <a href="/contacto.html#conectar">Conectar</a>
-      </div>
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 
-      <div>
-        <h3>📚 Recursos</h3>
-        <p>Compartamos recursos y tips de aprendizaje</p>
-        <a href="/contacto.html#recursos">Compartir</a>
+          <input type="submit" value="Submit">
+        </form>
       </div>
     </section>
 
