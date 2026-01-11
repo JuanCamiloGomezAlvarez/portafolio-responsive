@@ -16,7 +16,6 @@ a {
   text-decoration: none;
 }
 
-
 header {
   overflow: hidden;
   position: fixed;
@@ -124,19 +123,15 @@ section {
   background-color: rgb(104, 211, 114);
 }
 
-
-
 .div-ul {
   display: none;
 }
-
 
 .header-actions {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 
 #contenido-principal {
   margin-top: 70px;
@@ -145,6 +140,7 @@ section {
 .hero {
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   height: 100vh;
 }
@@ -205,28 +201,32 @@ h2 {
   color: rgb(104, 211, 114);
 }
 
-
 .hero__figure {
-  position: relative;
-  width: 50%;
-  padding-right: 100px;
-  display: none;
+  width: 90%;
+  display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  margin-top: 80px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .hero__figure img {
+  min-width: 200px; 
+  max-width: 320px;
+  min-height: 200px;
+  max-height: 320px;
+  margin: 0 auto;
   display: block;
   border-radius: 50%;
   object-fit: cover;
 }
 
 .hero__figure p {
+  display: none;
   position: absolute;
   background: rgb(0, 0, 0);
   background: rgba(0, 0, 0, 0.5);
-  /* Black see-through */
+  
   width: 500px;
   transition: .5s ease;
   opacity: 0;
@@ -548,18 +548,28 @@ input[type=submit]:hover {
     font-size: calc(3.3rem + 2vw);
   }
 
+  .hero {
+  flex-direction: row;
+  }
+
+  .hero__presentacion{
+    width: 60%;
+  }
+
   .hero__figure {
     position: relative;
     width: 50%;
-    padding-right: 100px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    margin-top: 80px;
+    justify-content: center;
   }
 
   .hero__figure img {
+    max-width: none;
+    max-height: none;
     display: block;
+    width: 500px;
+    height: 500px;
     border-radius: 50%;
     object-fit: cover;
   }
