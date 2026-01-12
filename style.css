@@ -375,7 +375,7 @@
   }
 
   .projects figure {
-    margin: 5px;
+    margin: 0 auto;
 
   }
 
@@ -414,10 +414,9 @@
   }
 
   .img-figure {
-    background-color: cornsilk;
-    width: 100%;
-    height: 280px;
-    object-fit: contain;
+    width: 320px;
+    height: 260px;
+    margin: 0 auto;
     border-radius: 8px;
   }
 
@@ -436,20 +435,20 @@
   }
 
   article h3 {
-    margin: 5px auto;
     font-size: 1.2em;
     font-weight: bold;
     text-align: center;
-    text-align: center;
+    margin-bottom: 0;
   }
 
   article p {
     margin: 5px auto;
     font-size: 0.9em;
-    font-weight: 600;
+    font-weight: 900;
     text-align: center;
     max-height: 65px;
     overflow-y: auto;
+    color: #3d444b;
   }
 
   .btn-article {
@@ -463,6 +462,10 @@
     border-radius: 6px;
     font-weight: 600;
     border: none;
+  }
+
+  .btn-article:hover{
+    background-color:#04AA6D ;
   }
 
   .contact {
