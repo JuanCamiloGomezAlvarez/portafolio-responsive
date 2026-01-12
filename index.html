@@ -38,6 +38,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
+  <script src="https://kit.fontawesome.com/b51b62994c.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -263,111 +264,58 @@
   </main>
 
   <footer role="contentinfo">
-    <!-- Sobre Mi Perfil Personal -->
-    <section aria-labelledby="footer-about">
-      <h2 id="footer-about">Mi Perfil Personal</h2>
-      <p>
-        Portfolio personal de Juan Camilo Gómez.
-        Desarrollador web.
-      </p>
-
-      <!-- Newsletter -->
-      <form action="/newsletter" method="POST">
-        <label for="newsletter-email">
-          Suscríbete a mi newsletter
-        </label>
-        <input type="email" id="newsletter-email" name="email" placeholder="tu@email.com" required aria-required="true">
-        <button type="submit">Suscribir</button>
-      </form>
+    <section class="footer-section">
+      <div class="footer-div">
+        <div class="enlaces-footer" aria-label="Enlaces del footer">
+          <h4>Acceso rapido</h4>
+          <a href="#hero">Inicio</a>
+          <a href="#habilidades">Habilidades</a>
+          <a href="#proyectos">Proyectos</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+        <div class="enlaces-footer" aria-label="Enlaces legales">
+          <h4>Soporte</h4>
+          <a href="/privacidad.html">Privacidad</a>
+          <a href="/terminos.html">Términos</a>
+          <a href="/accesibilidad.html">Accesibilidad</a>
+        </div>
+      </div>
+      <div class="footer-div" aria-labelledby="footer-social">
+        <div class="enlaces-footer enlaces-footer-fa">
+          <h4 id="footer-social">Sígueme</h4>
+          <div class="footer-div_icons">
+            <a class="enlaces-footer_icon" href="https://github.com/JuanCamiloGomezAlvarez" target="_blank"
+              rel="noopener" aria-label="GitHub de Camilo">
+              <i class="fa-brands fa-github fa-lg" style="color: #63E6BE;"></i>
+            </a>
+            <a class="enlaces-footer_icon" href="https://x.com/JCGA931" target="_blank" rel="noopener"
+              aria-label="Twitter de Diego De Granda">
+              <i class="fa-brands fa-twitter fa-lg" style="color: #63E6BE;"></i>
+            </a>
+            <a class="enlaces-footer_icon" href="https://www.linkedin.com/in/juan-camilo-gomez-alvarez-747147201"
+              target="_blank" rel="noopener" aria-label="LinkedIn de Camilo">
+              <i class="fa-brands fa-linkedin fa-lg" style="color: #63E6BE;"></i>
+            </a>
+          </div>
+        </div>
+        <div class="enlaces-footer enlaces-footer-fa">
+          <h4>Descargar mi CV (PDF)</h4>
+          <a href="/assets/documents/cv-Juan-Camilo.pdf" download>
+            <i class="fa-solid fa-file fa-2xl" style="color: #63E6BE;"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="footer-div-final">
+        <p>&copy; 2026 Juan Camilo Gómez - Mi Perfil Personal. Todos los derechos reservados.</p>
+        <p>
+          Diseñado y desarrollado con ❤️ por Juan Camilo Gómez Álvarez
+        </p>
+      </div>
     </section>
 
-    <!-- Enlaces del Footer -->
-    <nav aria-label="Enlaces del footer">
-      <ul>
-        <li><a href="/">Inicio</a></li>
-        <li><a href="/sobre-mi.html">Sobre mí</a></li>
-        <li><a href="/proyectos.html">Proyectos</a></li>
-        <li><a href="/blog.html">Blog</a></li>
-        <li><a href="/contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
 
-    <!-- Contacto -->
-    <section aria-labelledby="footer-contact">
-      <h2 id="footer-contact">Contacto</h2>
-      <address>
-        <dl>
-          <dt>Email:</dt>
-          <dd>
-            <a href="mailto:kamygz93@gmail.com">
-              kamygz93@gmail.com
-            </a>
-          </dd>
-
-          <dt>LinkedIn:</dt>
-          <dd>
-            <a href="https://www.linkedin.com/in/juan-camilo-gomez-alvarez-747147201" target="_blank" rel="noopener">
-              linkedin.com/in/juan-camilo-gomez-alvarez-747147201
-            </a>
-          </dd>
-
-          <dt>GitHub:</dt>
-          <dd>
-            <a href="https://github.com/JuanCamiloGomezAlvarez" target="_blank" rel="noopener">
-              github.com/JuanCamiloGomezAlvarez
-            </a>
-          </dd>
-
-          <dt>Ubicación:</dt>
-          <dd>Medellin, Colombia</dd>
-        </dl>
-      </address>
-    </section>
-
-    <!-- Redes Sociales -->
-    <section aria-labelledby="footer-social">
-      <h2 id="footer-social">Sígueme</h2>
-      <ul>
-        <li>
-          <a href="https://github.com/JuanCamiloGomezAlvarez" target="_blank" rel="noopener"
-            aria-label="GitHub de Camilo">
-            GitHub
-          </a>
-        </li>
-        <li>
-          <a href="https://twitter.com/diegodegranda_dev" target="_blank" rel="noopener"
-            aria-label="Twitter de Diego De Granda">
-            Twitter
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/juan-camilo-gomez-alvarez-747147201" target="_blank" rel="noopener"
-            aria-label="LinkedIn de Camilo">
-            LinkedIn
-          </a>
-        </li>
-      </ul>
-
-      <!-- Descargas -->
-      <a href="/assets/documents/cv-diego-degranda.pdf" download>
-        📄 Descargar mi CV (PDF)
-      </a>
-    </section>
-
-    <!-- Footer Bottom -->
-    <div>
-      <p>&copy; 2025 Diego De Granda - Mi Perfil Personal. Todos los derechos reservados.</p>
-
-      <nav aria-label="Enlaces legales">
-        <a href="/privacidad.html">Privacidad</a>
-        <a href="/terminos.html">Términos</a>
-        <a href="/accesibilidad.html">Accesibilidad</a>
-      </nav>
-
-      <p>
-        Diseñado y desarrollado con ❤️ por Diego De Granda
-      </p>
-    </div>
   </footer>
 
   <script>
