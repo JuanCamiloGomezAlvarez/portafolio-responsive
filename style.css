@@ -740,11 +740,16 @@
     border-radius: 5%;
   }
 
- 
+ .posts{
+  height: 100%;
+ }
 }
 
 @media (min-width: 1440px) {
   .article-container {
     height: 100vh;
   }
+   .posts{
+  height: 100%;
+ }
 }
