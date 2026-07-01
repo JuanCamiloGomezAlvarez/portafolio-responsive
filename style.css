@@ -403,9 +403,9 @@
     min-width: 320px;
     max-width: 345px;
     height: 500px;
-    background-color: white;
+    background-color: #f2f2f2;
     border-radius: 8px;
-    box-shadow: 3px 3px 10px rgb(104, 211, 114);
+    /* box-shadow: 3px 3px 10px rgb(104, 211, 114); */
   }
 
   article:hover {
@@ -614,6 +614,26 @@
     animation: pulse 3s ease-in-out infinite;
   }
 
+  .posts h3 {
+    color: rgb(104, 211, 114);
+    margin: 0;
+  }
+
+  .hero-post{
+    height: 100%;
+  }
+
+  .hero-post h3{
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .hero-post img {
+    border-radius: 5%;
+  }
+
 
 }
 
@@ -705,6 +725,19 @@
     display: flex;
     width: 80%;
     margin: 0 auto;
+  }
+
+  .hero-post{
+    height: 100%;
+  }
+   .hero-post p {
+    width: 100%;
+  }
+
+  .hero-post img {
+    width: 400px;
+    height: 400px;
+    border-radius: 5%;
   }
 
  
