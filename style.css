@@ -370,13 +370,12 @@
   }
 
   .projects {
+    margin-top: 50px;
     padding-top: 100px;
-    ;
   }
 
   .projects figure {
     margin: 0 auto;
-
   }
 
   .projects h2 {
@@ -604,6 +603,18 @@
     font-size: 1.6em;
   }
 
+  .posts figure {
+    margin: 0 auto;
+  }
+
+  .posts h2 {
+    color: rgb(104, 211, 114);
+    padding: 25px 0;
+    margin: 0;
+    animation: pulse 3s ease-in-out infinite;
+  }
+
+
 }
 
 
@@ -695,6 +706,8 @@
     width: 80%;
     margin: 0 auto;
   }
+
+ 
 }
 
 @media (min-width: 1440px) {
