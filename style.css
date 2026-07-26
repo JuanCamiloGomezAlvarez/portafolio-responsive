@@ -5,15 +5,17 @@
 
 }
 
-@keyframes pulse{
-  0%{
+@keyframes pulse {
+  0% {
     transform: scale(1);
   }
-  50%{
-    
+
+  50% {
+
     text-shadow: 4px 4px 12px rgb(104, 211, 114);
   }
-  100%{
+
+  100% {
     transform: scale(1);
   }
 }
@@ -156,7 +158,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 100vh;
+    /* height: 100vh; */
   }
 
   .hero__presentacion {
@@ -179,10 +181,10 @@
     font-weight: bold;
     text-shadow: 4px 4px 12px rgb(104, 211, 114);
     text-align: center;
-    
+
   }
 
-  h1:hover{
+  h1:hover {
     animation: pulse 3s ease-in-out infinite;
   }
 
@@ -261,7 +263,7 @@
 
   .skills {
     padding-top: 100px;
-    height: 100vh;
+    /* height: 100vh; */
   }
 
   .skills h2 {
@@ -284,7 +286,7 @@
   .icon-container {
     display: grid;
     justify-items: center;
-    max-width: 1024px;
+    max-width: 450px;
     min-width: 280px;
     margin: 0 auto;
     gap: 20px;
@@ -301,7 +303,7 @@
     background-color: #212529;
     box-shadow: rgba(0, 0, 0, 0.8) 0px 1px 4px 0px;
     border-radius: 8px;
-    
+
   }
 
   .div-icon:hover {
@@ -370,7 +372,6 @@
   }
 
   .projects {
-    margin-top: 50px;
     padding-top: 100px;
   }
 
@@ -392,11 +393,11 @@
     min-width: 320px;
     margin: 0 auto;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 20px;
+    gap: 15px;
     padding-bottom: 20px;
   }
 
-  article {
+  .projects-article {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -408,12 +409,27 @@
     /* box-shadow: 3px 3px 10px rgb(104, 211, 114); */
   }
 
+  .blog-article{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 320px;
+    max-width: 90%;
+    height: 200px;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+  }
+
+  .blog-article figure{
+    display: none;
+  }
+
   article:hover {
     box-shadow: 3px 3px 20px rgb(67, 221, 83);
   }
 
   .img-figure {
-    width: 320px;
+    width: 290px;
     height: 260px;
     margin: 0 auto;
     border-radius: 8px;
@@ -463,12 +479,12 @@
     border: none;
   }
 
-  .btn-article:hover{
-    background-color:#04AA6D ;
+  .btn-article:hover {
+    background-color: #04AA6D;
   }
 
   .contact {
-    height: 100vh;
+    /* height: 100vh; */
     padding-top: 100px;
   }
 
@@ -534,21 +550,21 @@
     font-weight: bold;
   }
 
-  footer{
+  footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: space-between;
   }
 
-  .footer-div{
+  .footer-div {
     display: flex;
     justify-content: space-evenly;
     width: 90%;
     margin: 0 auto;
   }
 
-  .footer-div-final{
+  .footer-div-final {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -561,45 +577,45 @@
     padding: 40px 0;
   }
 
-  .enlaces-footer h4{
+  .enlaces-footer h4 {
     color: #04AA6D;
     font-size: 1.2rem;
     font-weight: bold;
     animation: pulse 3s ease-in-out infinite;
   }
 
-  .enlaces-footer{
+  .enlaces-footer {
     display: flex;
     flex-direction: column;
     list-style-type: none;
     margin: 0 auto;
     padding: 0;
-    text-align:left;
-    
+    text-align: left;
+
   }
 
-  .enlaces-footer a{
+  .enlaces-footer a {
     color: white;
     font-size: 0.9rem;
     font-weight: bold;
     margin-bottom: 15px;
   }
 
-  .enlaces-footer-fa{
+  .enlaces-footer-fa {
     text-align: center;
   }
 
-   .enlaces-footer-fa a{
+  .enlaces-footer-fa a {
     font-size: 1.5em;
   }
 
-  .footer-div_icons{
+  .footer-div_icons {
     display: flex;
     justify-content: row;
     gap: 10px;
   }
 
-  .fa-lg{
+  .fa-lg {
     font-size: 1.6em;
   }
 
@@ -619,11 +635,11 @@
     margin: 0;
   }
 
-  .hero-post{
+  .hero-post {
     height: 100%;
   }
 
-  .hero-post h3{
+  .hero-post h3 {
     color: white;
     font-size: 1.2em;
     font-weight: bold;
@@ -721,16 +737,17 @@
     opacity: 1;
   }
 
-  .footer-section{
+  .footer-section {
     display: flex;
     width: 80%;
     margin: 0 auto;
   }
 
-  .hero-post{
+  .hero-post {
     height: 100%;
   }
-   .hero-post p {
+
+  .hero-post p {
     width: 100%;
   }
 
@@ -740,16 +757,23 @@
     border-radius: 5%;
   }
 
- .posts{
-  height: 100%;
- }
+  .posts {
+    height: 100%;
+  }
+
+  .blog-article{
+    height: 500px;
+    ;
+  }
+
+  .blog-article figure{
+    display: flex;
+  }
 }
 
 @media (min-width: 1440px) {
-  .article-container {
-    height: 100vh;
+  
+  .posts {
+    height: 100%;
   }
-   .posts{
-  height: 100%;
- }
 }
