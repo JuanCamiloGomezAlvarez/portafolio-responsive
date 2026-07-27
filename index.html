@@ -50,18 +50,18 @@
       </a>
     </div>
     <nav class="nav-container" aria-label="Navegación principal">
-      <div class="icon" id="toggle" onclick="myFunction(this)">
+      <div class="icon" id="toggleX" onclick="myFunction(this)">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
       </div>
       <div class="div-ul" id="ul">
         <ul class="nav-ul">
-          <li><a href="#hero" onclick="myFunction(this)" aria-current="page">Inicio</a></li>
-          <li><a href="#habilidades" onclick="myFunction(this)">Habilidades</a></li>
-          <li><a href="#proyectos" onclick="myFunction(this)">Proyectos</a></li>
-          <li><a href="#contacto" onclick="myFunction(this)">Contacto</a></li>
-          <li><a href="blog.html" onclick="myFunction(this)">Blog</a></li>
+          <li><a href=""  onclick="myFunction(this)" aria-current="page">Inicio</a></li>
+          <li><a href="#" data-target="habilidades" onclick="myFunction(this)">Habilidades</a></li>
+          <li><a href="#" data-target="proyectos" onclick="myFunction(this)">Proyectos</a></li>
+          <li><a href="#" data-target="contacto" onclick="myFunction(this)">Contacto</a></li>
+          <li><a href="#" data-target="blog" onclick="myFunction(this)">Blog</a></li>
           <li>
             <div class="header-actions">
               <a class="cv" href="/assets/documents/cv-Juan-Camilo.pdf" download aria-label="Descargar CV en PDF">
@@ -252,8 +252,8 @@
       </div>
     </section>
 
-    <section class="blog" id="blog" aria-labelledby="blog-title">
-      <div class="hero" id="hero" aria-labelledby="hero-titulo">
+    <section class="oculto blog" id="blog" aria-labelledby="blog-title">
+      <div class="hero-blog" id="hero-blog" aria-labelledby="hero-titulo">
         <div class="hero__presentacion">
           <div class="hero__presentacion--introduccion">
             <h1 id="hero-titulo">JC Blog <br> Tech & Learning </h1>
@@ -361,6 +361,8 @@
 
     </section>
 
+    
+
   </main>
 
   <footer role="contentinfo">
@@ -418,14 +420,7 @@
 
   </footer>
 
-  <script>
-    function myFunction(x) {
-      console.log("click")
-      x.classList.toggle("change");
-      const contenedor = document.getElementById("ul")
-      contenedor.classList.toggle("div-ul")
-    }
-  </script>
+  <script src="app.js"></script>
 </body>
 
 </html>
