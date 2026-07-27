@@ -1,14 +1,17 @@
 //hamburguesa menu desplegable
 function myFunction(x) {
+  
       x.classList.toggle("change");
       const contenedor = document.getElementById("ul")
       contenedor.classList.toggle("div-ul")
+      x.preventDefault();
 }
 
 // movimiento a sections desde el nav
 
 const nav = document.querySelector(".nav-ul")
 const secciones = document.querySelectorAll("main > section")
+const barras = document.getElementById("barras-menu")
 
 nav.addEventListener("click", (e) => {
     // Solo actuar si se hizo clic en un enlace con data-target
@@ -30,6 +33,9 @@ nav.addEventListener("click", (e) => {
       seccionActiva.classList.remove("oculto");
     }
 
+    
+
     // me lleva al inicio de la pagina
     seccionActiva.scrollIntoView({ behavior: "smooth", block: "start" });
+    barras.classList.toggle('change')
   });
