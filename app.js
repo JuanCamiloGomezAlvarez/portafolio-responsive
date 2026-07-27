@@ -1,6 +1,5 @@
 //hamburguesa menu desplegable
 function myFunction(x) {
-      console.log("click")
       x.classList.toggle("change");
       const contenedor = document.getElementById("ul")
       contenedor.classList.toggle("div-ul")
@@ -30,4 +29,7 @@ nav.addEventListener("click", (e) => {
     if (seccionActiva) {
       seccionActiva.classList.remove("oculto");
     }
+
+    // me lleva al inicio de la pagina
+    seccionActiva.scrollIntoView({ behavior: "smooth", block: "start" });
   });

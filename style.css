@@ -301,14 +301,11 @@
     width: 100px;
     height: 100px;
     background-color: #212529;
-    box-shadow: rgba(0, 0, 0, 0.8) 0px 1px 4px 0px;
+    box-shadow: 3px 3px 10px rgb(104, 211, 114);
     border-radius: 8px;
 
   }
 
-  .div-icon:hover {
-    box-shadow: 3px 3px 10px rgb(104, 211, 114);
-  }
 
   .div-card-icon {
     width: 60px;
@@ -563,6 +560,7 @@
   }
 
   footer {
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
