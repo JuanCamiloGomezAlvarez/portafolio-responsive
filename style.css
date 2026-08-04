@@ -176,7 +176,7 @@
   }
 
   h1 {
-    margin-bottom: 0;
+    margin-bottom: 15px;
     color: rgb(104, 211, 114);
     font-size: calc(2.375rem + 2vw);
     font-weight: bold;
@@ -190,6 +190,7 @@
   }
 
   h2 {
+    margin-bottom: 15px;
     color: white;
     font-size: 1.5em;
     font-weight: bold;
@@ -363,7 +364,7 @@
   }
 
   .div-icon span {
-    color: rgb(110, 110, 110);
+    color: #f2f2f2;
     font-size: 1em;
 
   }
@@ -419,6 +420,7 @@
 
   article figcaption {
     margin-top: 5px;
+    margin-bottom: 15px;
     text-align: center;
   }
 
@@ -533,6 +535,7 @@
 
   .blog{
     margin-top: 100px;
+    padding-top: 100px;
     width: 100%;
     display: flex;
     flex-direction: column;
